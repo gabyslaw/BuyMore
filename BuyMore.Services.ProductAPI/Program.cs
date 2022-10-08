@@ -1,6 +1,7 @@
 using AutoMapper;
 using BuyMore.Services.ProductAPI;
 using BuyMore.Services.ProductAPI.DbContexts;
+using BuyMore.Services.ProductAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,7 +18,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
