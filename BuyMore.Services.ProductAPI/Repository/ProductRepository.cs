@@ -53,7 +53,7 @@ namespace BuyMore.Services.ProductAPI.Repository
             }
         }
 
-        public async Task<IEnumerable<ProductDto>> GetProducsts()
+        public async Task<IEnumerable<ProductDto>> GetProducts()
         {
             List<Product> productList = await _db.Products.ToListAsync();
             return _mapper.Map<List<ProductDto>>(productList);
