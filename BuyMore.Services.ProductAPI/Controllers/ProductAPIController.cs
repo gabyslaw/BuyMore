@@ -7,15 +7,15 @@ namespace BuyMore.Services.ProductAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ProductAPIController : ControllerBase
     {
         private readonly IProductRepository _productRepository;
         private protected ResponseDto _response;
 
-        public ProductController(IProductRepository productRepository, ResponseDto responseDto)
+        public ProductAPIController(IProductRepository productRepository)
         {
             _productRepository = productRepository;
-            _response = responseDto;
+            _response = new ResponseDto();
         }
 
         [HttpGet]
