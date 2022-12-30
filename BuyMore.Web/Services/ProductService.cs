@@ -19,7 +19,7 @@ namespace BuyMore.Web.Services
             {
                 ApiType = SD.APIType.POST,
                 Data = productDto,
-                ApiUrl = SD.ProductAPIBase + "/api/product/",
+                ApiUrl = SD.ProductAPIBase + "/api/productapi/",
                 AccessToken = ""
             });
         }
@@ -29,7 +29,7 @@ namespace BuyMore.Web.Services
             return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType = SD.APIType.DELETE,
-                ApiUrl = SD.ProductAPIBase + "/api/product/" + id,
+                ApiUrl = SD.ProductAPIBase + "/api/productapi/" + id,
                 AccessToken = ""
             });
         }
@@ -39,7 +39,7 @@ namespace BuyMore.Web.Services
             return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType = SD.APIType.GET,
-                ApiUrl = SD.ProductAPIBase + "/api/product/",
+                ApiUrl = SD.ProductAPIBase + "/api/productapi/",
                 AccessToken = ""
             });
         }
@@ -49,7 +49,7 @@ namespace BuyMore.Web.Services
             return await this.SendAsync<T>(new ApiRequest()
             {
                 ApiType = SD.APIType.GET,
-                ApiUrl = SD.ProductAPIBase + "/api/product/" + id,
+                ApiUrl = SD.ProductAPIBase + "/api/productapi/" + id,
                 AccessToken = ""
             });
         }
@@ -60,7 +60,7 @@ namespace BuyMore.Web.Services
             {
                 ApiType = SD.APIType.PUT,
                 Data = productDto,
-                ApiUrl = SD.ProductAPIBase + "/api/product/",
+                ApiUrl = SD.ProductAPIBase + "/api/productapi/",
                 AccessToken = ""
             });
         }
