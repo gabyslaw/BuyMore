@@ -1,6 +1,8 @@
-﻿namespace BuyMore.Services.Identity.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace BuyMore.Services.Identity.Models
 {
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser
     {
     }
 }

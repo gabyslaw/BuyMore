@@ -1,6 +1,17 @@
-﻿namespace BuyMore.Services.Identity.DbContexts
+﻿using BuyMore.Services.Identity.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+
+namespace BuyMore.Services.Identity.DbContexts
 {
-    public class ApplicationDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        {
+
+        }
+
+   
     }
+
 }

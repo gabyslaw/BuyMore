@@ -5,11 +5,13 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{ECAF876D-B4A7-4F9D-BFCF-3E1CC8F76C21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyMore.Web", "BuyMore.Web\BuyMore.Web.csproj", "{227B4E7C-B5B8-4822-A992-806B0D6E0588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuyMore.Web", "BuyMore.Web\BuyMore.Web.csproj", "{227B4E7C-B5B8-4822-A992-806B0D6E0588}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{2E7084EC-CAB9-48EF-B0B3-7EEA7D459DA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyMore.Services.ProductAPI", "BuyMore.Services.ProductAPI\BuyMore.Services.ProductAPI.csproj", "{6FEB654F-3FE8-4AFE-BD7B-B5D239E72858}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuyMore.Services.ProductAPI", "BuyMore.Services.ProductAPI\BuyMore.Services.ProductAPI.csproj", "{6FEB654F-3FE8-4AFE-BD7B-B5D239E72858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyMore.Services.Identity", "BuyMore.Services.Identity\BuyMore.Services.Identity.csproj", "{A1E2A779-DD03-489F-B31F-35C4F2CB6C7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{6FEB654F-3FE8-4AFE-BD7B-B5D239E72858}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FEB654F-3FE8-4AFE-BD7B-B5D239E72858}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FEB654F-3FE8-4AFE-BD7B-B5D239E72858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1E2A779-DD03-489F-B31F-35C4F2CB6C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E2A779-DD03-489F-B31F-35C4F2CB6C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E2A779-DD03-489F-B31F-35C4F2CB6C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E2A779-DD03-489F-B31F-35C4F2CB6C7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{227B4E7C-B5B8-4822-A992-806B0D6E0588} = {ECAF876D-B4A7-4F9D-BFCF-3E1CC8F76C21}
 		{6FEB654F-3FE8-4AFE-BD7B-B5D239E72858} = {2E7084EC-CAB9-48EF-B0B3-7EEA7D459DA4}
+		{A1E2A779-DD03-489F-B31F-35C4F2CB6C7E} = {2E7084EC-CAB9-48EF-B0B3-7EEA7D459DA4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB46B141-5353-46A9-8346-5DC890480615}
