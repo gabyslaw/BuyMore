@@ -2570,6 +2570,7 @@
       "AutoMapper >= 12.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.9",
+      "Microsoft.EntityFrameworkCore >= 6.0.9",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.9",
       "Swashbuckle.AspNetCore >= 6.4.0",
@@ -2578,19 +2579,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\olowoniwaea\\.nuget\\packages\\": {}
+    "C:\\Users\\ayokunle.olowoniwa\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Dotnet\\BuyMore\\BuyMore\\BuyMore.Services.ProductAPI\\BuyMore.Services.ProductAPI.csproj",
+      "projectUniqueName": "C:\\Projects\\BuyMore\\BuyMore.Services.ProductAPI\\BuyMore.Services.ProductAPI.csproj",
       "projectName": "BuyMore.Services.ProductAPI",
-      "projectPath": "C:\\Projects\\Dotnet\\BuyMore\\BuyMore\\BuyMore.Services.ProductAPI\\BuyMore.Services.ProductAPI.csproj",
-      "packagesPath": "C:\\Users\\olowoniwaea\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Dotnet\\BuyMore\\BuyMore\\BuyMore.Services.ProductAPI\\obj\\",
+      "projectPath": "C:\\Projects\\BuyMore\\BuyMore.Services.ProductAPI\\BuyMore.Services.ProductAPI.csproj",
+      "packagesPath": "C:\\Users\\ayokunle.olowoniwa\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\BuyMore\\BuyMore.Services.ProductAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\olowoniwaea\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ayokunle.olowoniwa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2598,7 +2599,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.hangfire.io/nuget/hangfire-pro": {}
       },
       "frameworks": {
         "net6.0": {
@@ -2625,6 +2627,10 @@
             "version": "[12.0.0, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[6.0.9, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.9, )"
           },
@@ -2670,7 +2676,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
