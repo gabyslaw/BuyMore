@@ -1,5 +1,6 @@
 ﻿using BuyMore.Services.ProductAPI.Models.Dtos;
 using BuyMore.Services.ProductAPI.Repository;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,7 @@ namespace BuyMore.Services.ProductAPI.Controllers
             _response = new ResponseDto();
         }
 
+        [Authorize]
         [HttpGet]
         public async Task<object> Get()
         {
@@ -38,6 +40,7 @@ namespace BuyMore.Services.ProductAPI.Controllers
             return _response;
         }
 
+        [Authorize]
         [HttpGet]
         [Route("{id}")]
         public async Task<object> Get(int id)
@@ -59,6 +62,7 @@ namespace BuyMore.Services.ProductAPI.Controllers
             return _response;
         }
 
+        [Authorize]
         [HttpPost]
         public async Task<object> Post([FromBody] ProductDto productDto)
         {
@@ -79,6 +83,7 @@ namespace BuyMore.Services.ProductAPI.Controllers
             return _response;
         }
 
+        [Authorize]
         [HttpPut]
         public async Task<object> Put([FromBody] ProductDto productDto)
         {
@@ -99,6 +104,7 @@ namespace BuyMore.Services.ProductAPI.Controllers
             return _response;
         }
 
+        [Authorize(Roles ="Admin")]
         [HttpDelete]
         [Route("{id}")]
         public async Task<object> Delete(int id)
